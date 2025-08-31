@@ -10,6 +10,7 @@
 
 *::-webkit-scrollbar-thumb {
   border-radius: 5px;
+  background-color: grey;
 }
 
 body {
@@ -22,7 +23,7 @@ body {
 * {
   &:focus {
     box-shadow: 0 0 15px 2px white;
-    }
+  }
 }
 @media (prefers-color-scheme: light) {
   :root {

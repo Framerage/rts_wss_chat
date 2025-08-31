@@ -1,13 +1,13 @@
-.contentWrap{
-    background-color: lightblue;
-    padding: 0 20px;
-    margin: 0 auto;
-    width: 100dvw ;
-    height: 100dvh;
-    align-content: center;
-    color: #000;
-    font-size: 14px;
-    .chatContainer{
+.contentWrap {
+  background-color: lightblue;
+  padding: 0 20px;
+  margin: 0 auto;
+  width: 100dvw;
+  height: 100dvh;
+  align-content: center;
+  color: #000;
+  font-size: 14px;
+  .chatContainer {
     border: 6px double white;
     width: 250px;
     height: 350px;
@@ -15,41 +15,48 @@
     flex-direction: column;
     justify-content: space-between;
     margin: auto;
-        .chatHeader{
-            background-color: white;
-            height: 50px;
-            padding: 10px;
-            text-align: center;
-        }
-        .chatWindow{
-        background-color: lightgray;
-        height: 100%;
-        overflow: hidden;
-        padding: 5px 10px;
-        display: flex;
-        flex-direction: column;
-        gap: 8px;
-        list-style: none;
-        }
-        .chatFooter{
-                background-color: white;
-                height: 60px;
-                padding: 4px;
-                display: flex;
-                gap: 4px;
-                textarea{
-                    min-width: 80%;
-                    width: 100%;
-                    padding: 4px;
-                    min-height: 50px;
-                    max-height: 50px;
-                }
-                button{
-                    height: 20px;
-                    align-self: center;
-                    cursor: pointer;
-                    transition: .2s;
-                }
-        }
+    .chatHeader {
+      background-color: white;
+      height: 50px;
+      padding: 10px;
+      text-align: center;
     }
+    .chatWindow {
+      background-color: lightgray;
+      height: 100%;
+      overflow: auto;
+      padding: 5px 10px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      list-style: none;
+      .chatMsg {
+        justify-items: flex-start;
+      }
+      .personMsg {
+        text-shadow: 0 0 5px blue;
+        justify-items: flex-end;
+      }
+    }
+    .chatFooter {
+      background-color: white;
+      height: 60px;
+      padding: 4px;
+      display: flex;
+      gap: 4px;
+      textarea {
+        min-width: 80%;
+        width: 100%;
+        padding: 4px;
+        min-height: 50px;
+        max-height: 50px;
+      }
+      button {
+        height: 20px;
+        align-self: center;
+        cursor: pointer;
+        transition: 0.2s;
+      }
+    }
+  }
 }
